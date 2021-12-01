@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: rgb(224, 224, 155);
+}
+h1{
+    font-size: 40px;
+}
+.card>img{
+    width: 105%;
+    height: 100%;
+    background-color: #DDDDDD;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition:all 1s ease-in-out;
+    transform-origin: 50% 50%;
+}
+#front{
+    z-index: 2;
+}
+#back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
